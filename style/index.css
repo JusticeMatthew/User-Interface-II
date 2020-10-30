@@ -88,11 +88,6 @@ a {
     font-family: 'Oswald', sans-serif;
 }
 
-section {
-    padding: 4% 0;
-    margin: 0 auto;
-}
-
 header {
     height: 20vh;
     color: whitesmoke;
@@ -131,29 +126,51 @@ nav a {
     width: 7%;
     text-align: center;
     text-transform: lowercase;
+    margin-top: 2.5rem;
 }
 
 .about {
-    border: 1px solid green;
-    margin-top: 8%;
+    margin: 6% auto 0;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     width: 75%;
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: start;
+    align-content: space-around;
 }
 
 .about h2 {
     font-size: 2.7rem;
-    width: 30%;
+    width: 40%;
     text-align: center;
-    padding-bottom: 1%;
 }
 
 .about p {
-    width:80%;
+    width:65%;
     text-align: center;
+}
+
+.bigimage {
+    width: 100%;
+    height: 30vh;
+    margin: 2% auto 4%;
+    background-image: url(/Assets/java.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.projects {
+    border: 1px solid green;
+    height: 60vh;
+    width: 100%;
+    display:flex;
+    justify-content: left;
+}
+
+.projects div {
+    border: 1px solid red;
+    width: 15%
 }
