@@ -172,5 +172,23 @@ nav a {
 
 .projects div {
     border: 1px solid red;
-    width: 15%
+    width: 15%;
+    align-items: center;
+}
+
+.projects .five {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.five p {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 50%;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    padding: 4%;
+    border-radius: 10px;
 }
