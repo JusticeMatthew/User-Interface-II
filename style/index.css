@@ -174,6 +174,54 @@ nav a {
     border: 1px solid red;
     width: 15%;
     align-items: center;
+    margin-right: 1%;
+}
+
+.projects h3 {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 85%;
+    font-size: 2.5rem;
+    border: 2px solid whitesmoke;
+    opacity: 0;
+}
+
+.one {
+    background-image: url(/Assets/macy.jpg);
+    background-size: cover;
+}
+
+.two {
+    background-image: url(/Assets/phil.jpg);
+    background-size: cover;
+}
+
+.three {
+    background-image: url(/Assets/jesse.jpg);
+    background-size: cover;
+}
+
+.four {
+    background-image: url(/Assets/josie.jpg);
+    background-size: cover;
+}
+
+.one:hover h3 {
+    opacity: 1;
+}
+
+.two:hover h3 {
+    opacity: 1;
+}
+
+.three:hover h3 {
+    opacity: 1;
+}
+
+.four:hover h3 {
+    opacity: 1;
 }
 
 .projects .five {
@@ -191,4 +239,5 @@ nav a {
     letter-spacing: .3rem;
     padding: 4%;
     border-radius: 10px;
+    text-align: center;
 }
