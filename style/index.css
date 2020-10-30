@@ -49,7 +49,6 @@ table {
 /* General Styles */
 
 * {
-    border: 1px grey solid;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -107,7 +106,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     font-size: 7rem;
-    
+    border: 2px solid whitesmoke;
     padding: 2% 0;
     border-radius: 10px;
 }
@@ -127,6 +126,11 @@ nav a {
     text-align: center;
     text-transform: lowercase;
     margin-top: 2.5rem;
+    border: 2px solid whitesmoke;
+}
+
+nav a:hover {
+    background-color: dimgray;
 }
 
 .about {
@@ -140,17 +144,20 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+    border: 2px solid whitesmoke;
 }
 
 .about h2 {
     font-size: 2.7rem;
     width: 40%;
     text-align: center;
+    padding-top: 1%;
 }
 
 .about p {
     width:65%;
     text-align: center;
+    padding-bottom: 1%;
 }
 
 .bigimage {
@@ -160,10 +167,11 @@ nav a {
     background-image: url(/Assets/java.jpg);
     background-position: center;
     background-size: cover;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .projects {
-    border: 1px solid green;
     height: 60vh;
     width: 100%;
     display:flex;
@@ -171,7 +179,6 @@ nav a {
 }
 
 .projects div {
-    border: 1px solid red;
     width: 15%;
     align-items: center;
     margin-right: 1%;
@@ -184,28 +191,32 @@ nav a {
     text-align: center;
     padding-top: 85%;
     font-size: 2.5rem;
-    border: 2px solid whitesmoke;
     opacity: 0;
 }
 
 .one {
     background-image: url(/Assets/macy.jpg);
     background-size: cover;
+    border: 2px solid whitesmoke;
+    margin-left: 1%;
 }
 
 .two {
     background-image: url(/Assets/phil.jpg);
     background-size: cover;
+    border: 2px solid whitesmoke;
 }
 
 .three {
     background-image: url(/Assets/jesse.jpg);
     background-size: cover;
+    border: 2px solid whitesmoke;
 }
 
 .four {
     background-image: url(/Assets/josie.jpg);
     background-size: cover;
+    border: 2px solid whitesmoke;
 }
 
 .one:hover h3 {
@@ -240,4 +251,23 @@ nav a {
     padding: 4%;
     border-radius: 10px;
     text-align: center;
+    border: 2px solid whitesmoke;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 4% 0 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid whitesmoke;
+}
+
+footer a {
+    border: 2px solid whitesmoke;
+    padding: 1% 2%;
+}
+
+footer a:hover {
+    background-color: dimgray;
 }
