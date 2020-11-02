@@ -407,7 +407,8 @@ footer a:hover {
     }
 
     footer {
-        padding: 15% 0 30%;
+        padding: 15% 0;
+        margin-bottom: 0;
     }
 
 }
