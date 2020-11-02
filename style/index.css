@@ -105,7 +105,7 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     width: 75%;
-    height: 250px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,7 +116,7 @@ nav a:hover {
 .about h2 {
     font-size: 2.7rem;
     width: 40%;
-    padding-top: 1%;
+    padding: 2% 0;
     text-align: center;
     position: relative;
     bottom: 10%;
@@ -125,6 +125,7 @@ nav a:hover {
 .about p {
     width:70%;
     text-align: center;
+    padding-bottom: 4%;
 }
 
 .big-image-container {
@@ -288,11 +289,11 @@ footer a:hover {
     
     .about-container {
         width: 85%;
-        height: 400px;
+        height: 100%;
     }
     
     .about h2 {
-        width: 60%;
+        width: 100%;
     }
     
     .about p {
@@ -300,7 +301,7 @@ footer a:hover {
     }
         
     .projects {
-        height: 150vh;
+        height: 130vh;
         justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
@@ -353,3 +354,60 @@ footer a:hover {
     }
 /*End*/    
 }  
+
+@media(max-width:500px) {
+
+    header {
+        height: 300px;
+    }
+
+    .name h1 {
+        text-align: center;
+        font-size: 4rem;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    header nav a {
+        width: 30%;
+        margin-right: 5%;
+        font-size: 1.5rem;
+        letter-spacing: normal;
+    }
+
+    .about-container {
+        width: 85%;
+        height: 100%;
+    }
+
+    .about h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        line-height: normal;
+    }
+    
+    .about p {
+        width:85%;
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .five p {
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
+
+    .projects {
+        height: 115vh;
+    }
+
+    .projects h3 {
+        letter-spacing: .1rem;
+    }
+
+    footer {
+        padding: 15% 0 30%;
+    }
+
+}
