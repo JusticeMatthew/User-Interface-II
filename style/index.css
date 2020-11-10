@@ -1,1 +1,423 @@
-/* Add CSS styling here */
+* {
+    box-sizing: border-box;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+html {
+    font-size: 62.5%; 
+}
+
+/*1rem === 10px - and it gives the user control*/
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    background-image: url("/Assets/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+a {
+    color:whitesmoke;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    height: 300px;
+    width: 100%;
+    color: whitesmoke;
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    width: 40%;
+    min-width: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+.name h1 {
+    text-align: center;
+    font-size: 7rem;
+}
+
+header nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+header nav a {
+    width: 12%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-transform: lowercase;
+    border: 2px solid whitesmoke;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .8rem;
+}
+
+nav a:hover {
+    background-color: dimgray;
+}
+
+/* Header fixed*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    color:  whitesmoke;
+    margin-top: 2%;
+}
+
+.about-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid whitesmoke;
+}
+
+.about h2 {
+    font-size: 2.7rem;
+    width: 40%;
+    padding: 2% 0;
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+}
+
+.about p {
+    width:70%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.big-image-container {
+    display: flex;
+}
+
+.bigimage {
+    width: 100%;
+    height: 25rem;
+    margin: 2% auto 4%;
+    object-fit: cover;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.projects {
+    height: 60vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.projects div {
+    width: 15%;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.projects h3 {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 85%;
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: .4s;
+}
+
+.one {
+    background-image: url(/Assets/macy.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid whitesmoke;
+    margin-left: 1%;
+}
+
+.two {
+    background-image: url(/Assets/phil.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid whitesmoke;
+}
+
+.three {
+    background-image: url(/Assets/jesse.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid whitesmoke;
+}
+
+.four {
+    background-image: url(/Assets/josie.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid whitesmoke;
+}
+
+.one:hover h3 {
+    opacity: 1;
+}
+
+.two:hover h3 {
+    opacity: 1;
+}
+
+.three:hover h3 {
+    opacity: 1;
+}
+
+.four:hover h3 {
+    opacity: 1;
+}
+
+.projects .five {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.five p {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 50%;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    padding: 4%;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid whitesmoke;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 4% 0 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid whitesmoke;
+}
+
+footer a {
+    border: 2px solid whitesmoke;
+    padding: 1% 2%;
+    transition: .4s;
+}
+
+footer a:hover {
+    background-color: dimgray;
+}
+
+/* END OF FULL SCREEN STYLING, MOBILE STARTS HERE*/
+
+@media(max-width:800px) {
+
+    header {
+        height: 400px;
+    }
+    
+    .name {
+        width: 80%;
+        min-width: 100px;
+        background: rgba(0, 0, 0, 0.7);
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        margin: .5rem;
+    }
+    
+    .name h1 {
+        text-align: center;
+        font-size: 7rem;
+    }
+    
+    header nav {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+    
+    header nav a {
+        width: 30%;
+        margin-right: 5%;
+    }
+
+    .bigimage {
+        margin: 20px auto 10px;
+    }
+    
+    .about-container {
+        width: 85%;
+        height: 100%;
+    }
+    
+    .about h2 {
+        width: 100%;
+    }
+    
+    .about p {
+        width:85%;
+    }
+        
+    .projects {
+        height: 130vh;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+        top: 20%;
+    }
+    
+    .projects div {
+        width: 80%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .projects h3 {
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 40%;
+        padding-top: 0;
+        opacity: 1;
+    }
+        
+    .projects .five {
+        width: 90%;
+        height: 10px;
+        display: flex;
+        justify-content:center;
+        position: relative;
+        bottom: 10%;
+    }
+    
+    .five p {
+        width: 90%;
+    }
+
+    .two {
+        background-image: url(/Assets/phil800.jpg);
+    }
+    
+    footer {
+        margin: 0;
+        padding: 10% 0;
+    }
+/*End*/    
+}  
+
+@media(max-width:500px) {
+
+    header {
+        height: 300px;
+    }
+
+    .name h1 {
+        text-align: center;
+        font-size: 4rem;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    header nav a {
+        width: 30%;
+        margin-right: 5%;
+        font-size: 1.5rem;
+        letter-spacing: normal;
+    }
+
+    .bigimage {
+        margin: 2% auto 40px;
+    }
+    
+
+    .about-container {
+        width: 85%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        line-height: normal;
+    }
+    
+    .about p {
+        width:85%;
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .five p {
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
+
+    .projects {
+        height: 135vh;
+        margin: 10px 0 40px;
+    }
+
+    .projects h3 {
+        letter-spacing: .1rem;
+    }
+
+    footer {
+        padding: 15% 0;
+        margin-bottom: 0;
+    }
+
+    
+}
+
+/* MVP METt */
